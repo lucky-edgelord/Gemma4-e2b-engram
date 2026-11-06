@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gemma4-engram"
+version = "0.1.0"
+description = "DeepSeek Engram conditional memory for Gemma 3 / Gemma 4 (hook-based, no model surgery)"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+dependencies = ["torch>=2.4", "transformers>=5.0", "tokenizers", "numpy", "sympy"]
+
+[project.optional-dependencies]
+dev = ["pytest", "datasets"]
+
+[tool.setuptools]
+packages = ["gemma4_engram"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]

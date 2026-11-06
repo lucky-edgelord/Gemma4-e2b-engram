@@ -1,0 +1,7 @@
+gemma4-engram
+This project adapts the Engram module from https://github.com/deepseek-ai/Engram
+(engram_demo_v1.py, Apache-2.0): the token-compression normaliser, the multiplicative-XOR n-gram
+hashing with per-layer prime moduli, the context-gated value path, and the dilated short convolution.
+Changes: single residual stream (no hyper-connections), torch-side hashing, KV-cache-aware decoding,
+zero-initialised output projection, hook-based attachment to Gemma 3 / Gemma 4 decoder layers.
+Gemma models are subject to the Gemma Terms of Use: https://ai.google.dev/gemma/terms
